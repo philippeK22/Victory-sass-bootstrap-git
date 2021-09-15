@@ -6118,6 +6118,79 @@ body {
   font-family: "";
 }
 
+body {
+  margin: 0;
+  width: 100%;
+}
+
+header {
+  background-color: #EAF0FF;
+  padding-bottom: 50px;
+  background-image: url("../../");
+}
+header .titreprincipal {
+  text-align: center;
+  justify-content: center;
+}
+header .titreprincipal h1, header .titreprincipal .h1 {
+  font-weight: bolder;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header hr {
+  width: 60%;
+  margin-left: 20%;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+header nav a {
+  color: grey;
+  justify-content: space-between;
+  margin: 0 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header .fond-bg {
+  background-image: url(/public/img/banner-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  padding-top: 300px;
+  align-items: center;
+}
+header .fond-bg h5, header .fond-bg .h5 {
+  text-transform: uppercase;
+}
+header .fond-bg h1, header .fond-bg .h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bolder;
+}
+header .fond-bg p {
+  font-size: 20px;
+}
+header .fond-bg button {
+  background-color: #F2745F;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 620px) {
+  .titreprincipal {
+    text-align: center;
+  }
+  .titreprincipal nav {
+    flex-wrap: wrap;
+  }
+}
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
