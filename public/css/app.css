@@ -6125,7 +6125,6 @@ body {
 
 header {
   background-color: #EAF0FF;
-  padding-bottom: 50px;
   background-image: url("../../");
 }
 header .titreprincipal {
@@ -6191,6 +6190,47 @@ header .fond-bg button {
     flex-wrap: wrap;
   }
 }
+section:first-of-type .cooking {
+  display: flex;
+  text-align: center;
+  margin: 0 20%;
+  padding: 200px 0;
+}
+section:first-of-type .bg-red {
+  background-color: #F2745F;
+  height: 320px;
+  width: 100%;
+  margin-bottom: 50px 0;
+  color: white;
+}
+section:first-of-type .bg-red h3, section:first-of-type .bg-red .h3 {
+  text-align: center;
+  font-weight: normal;
+  padding: 20px;
+}
+section:first-of-type .bg-red .bg-rosy {
+  text-transform: uppercase;
+  background-color: #F3826F;
+  padding: 20px;
+  margin: 0 10%;
+}
+section:first-of-type .bg-red .bg-rosy span {
+  margin: 30px;
+  flex-direction: column;
+}
+section:first-of-type .bg-red button {
+  margin: 10px 0;
+  display: inline-block;
+  flex-direction: column;
+}
+section:first-of-type .bg-download {
+  width: 100%;
+  height: 200px;
+  background-color: #F2745F;
+  color: white;
+  text-align: center;
+}
+
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
