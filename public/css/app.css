@@ -6230,7 +6230,25 @@ section:first-of-type .bg-download {
   color: white;
   text-align: center;
 }
+section:first-of-type .bg-download .download {
+  padding-bottom: 20px;
+}
+section:first-of-type .bg-download .download h2, section:first-of-type .bg-download .download .h2 {
+  padding-bottom: 50px;
+}
 
+@media screen and (max-width: 620px) {
+  section:first-of-type .cooking {
+    display: inline-block;
+    flex-direction: column;
+  }
+}
+section:nth-of-type(2) .weekly {
+  text-align: center;
+}
+section:nth-of-type(2) .weekly h1, section:nth-of-type(2) .weekly .h1 {
+  text-align: center;
+}
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
