@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "victory";
+  src: url("");
+}
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6120,7 +6124,6 @@ body {
 
 body {
   margin: 0;
-  width: 100%;
 }
 
 header {
@@ -6202,6 +6205,7 @@ section:first-of-type .bg-red {
   width: 100%;
   margin-bottom: 50px 0;
   color: white;
+  flex-direction: column;
 }
 section:first-of-type .bg-red h3, section:first-of-type .bg-red .h3 {
   text-align: center;
@@ -6214,24 +6218,38 @@ section:first-of-type .bg-red .bg-rosy {
   padding: 20px;
   margin: 0 10%;
 }
+section:first-of-type .bg-red .bg-rosy .button {
+  display: inline-block;
+}
 section:first-of-type .bg-red .bg-rosy span {
   margin: 30px;
-  flex-direction: column;
 }
 section:first-of-type .bg-red button {
-  margin: 10px 0;
-  display: inline-block;
-  flex-direction: column;
+  padding: 2%;
+  border-radius: 5px;
+  background-color: white;
+  color: #F3826F;
 }
 section:first-of-type .bg-download {
   width: 100%;
   height: 200px;
   background-color: #F2745F;
   color: white;
+  padding: 50px;
   text-align: center;
 }
 section:first-of-type .bg-download h2, section:first-of-type .bg-download .h2 {
-  margin-bottom: 50px;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 15px 0;
+}
+section:first-of-type .bg-download button {
+  text-transform: uppercase;
+  padding: 10px;
+  color: #F2745F;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bolder;
 }
 
 @media screen and (max-width: 620px) {
@@ -6254,16 +6272,71 @@ section:nth-of-type(2) .container {
 section:nth-of-type(2) .container .row {
   flex-wrap: nowrap;
 }
-section:nth-of-type(2) .container .row .col-4 {
+section:nth-of-type(2) .container .row .bg-blanc {
   background-color: #F2F6FF;
+  background-size: cover;
 }
-section:nth-of-type(2) .container .row .col-4 .light {
+section:nth-of-type(2) .container .row .bg-blanc img {
+  width: 100%;
+}
+section:nth-of-type(2) .container .row .bg-blanc .light {
   background-color: white;
 }
 
-section:last-of-type {
+footer {
   background-image: url(../img/signup-bg.jpg);
-  padding: 80px;
+  background-size: cover;
+}
+
+.text {
+  padding-top: 50px;
+}
+.text h2, .text .h2 {
+  color: white;
+  justify-content: center;
+  margin: auto;
+  margin: 80px;
+  font-size: 50px;
+  text-align: center;
+}
+.text form {
+  text-align: center;
+  margin-bottom: 10%;
+}
+.text form input {
+  padding: 20px 100px;
+  text-align: start;
+}
+.text form button {
+  background-color: transparent;
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+.text .bg-blue {
+  background-color: #363E50;
+  display: flex;
+  color: white;
+  padding: 50px;
+  justify-content: space-around;
+}
+.text .bg-blue .copyright {
+  text-transform: uppercase;
+  color: white;
+}
+.text .bg-blue .icone {
+  color: #363E50;
+  text-align: center;
+  display: flex;
+}
+.text .bg-blue .icone i {
+  color: white;
+  margin: 10px;
+  border: solid white;
+  border-radius: 50%;
+  padding: 2%;
 }
 
 /*!
@@ -17379,6 +17452,10 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+@font-face {
+  font-family: "victory";
+  src: url("");
 }
 
 /*# sourceMappingURL=app.css.map */
